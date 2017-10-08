@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                             <?php if ($this->options->footlink): ?>
 							<?php echo $this->options->footlink; ?>
 							<?php else : ?>
-							<li><a target="_blank" href="http://typecho.org/">Typecho</a></li>
+<!--							<li><a target="_blank" href="http://typecho.org/">Typecho</a></li>-->
                             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?><?php while($pages->next()): ?><li><a href="<?php $pages->permalink(); ?>"  class="inner-link"><?php $pages->title(); ?></a></li>
 							<?php endwhile; ?><?php endif; ?>
                         </ul>
